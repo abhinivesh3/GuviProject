@@ -4,7 +4,7 @@ header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE');
 header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization, X-CSRF-Token");
 
-$client = new MongoDB\Client("mongodb+srv://kavinkumarab:8rpHrWFwoAQ3KqMf@cluster0.gsdbfi0.mongodb.net/test?retryWrites=true&w=majority");
+$client = new MongoDB\Client("mongodb://abhinivesh:Sece@2020@cluster0.tzis1ej.mongodb.net/?retryWrites=true&w=majority");
 $db = $client->selectDatabase('test');
 $col = $db->selectCollection('users');
 
